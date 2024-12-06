@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         val fromRate = exchangeRates[fromCurrency] ?: 1.0
         val toRate = exchangeRates[toCurrency] ?: 1.0
 
-        // Конвертируем валюту
+
         val result = (amount / fromRate) * toRate
 
         val roundedResult = String.format("%.2f", result)
